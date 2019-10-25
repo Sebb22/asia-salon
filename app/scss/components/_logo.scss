@@ -1,0 +1,17 @@
+.logo {
+  display: inline-block;
+  background:$white;
+  padding:0.5em;
+  margin-right:0.6em;
+  &__title {
+    color: darken($bg-color,70%);
+    font-family: $font-family-logo;
+    font-size: 4rem;
+  }
+  &__subtitle {
+    color: darken($bg-color,70%);
+    font-size:1rem;
+    font-weight: 300;
+    letter-spacing:0.1rem; 
+  }
+}

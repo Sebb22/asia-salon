@@ -1,0 +1,14 @@
+.header {
+  background: $bg-color;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  z-index:10;
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+}

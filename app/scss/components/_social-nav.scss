@@ -1,0 +1,27 @@
+.social-nav {
+  width: 100%;
+  transition:1s ease-in-out;
+  &.footer{
+    margin:0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    &.footer {
+      padding: 0;
+    }
+    &__item {
+      margin: 0 1em 0 1em;
+      i {
+        font-size: 1.5rem;
+        color: $color-text;
+      }
+      &.footer {
+        i {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}

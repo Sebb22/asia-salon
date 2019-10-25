@@ -1,0 +1,14 @@
+.main-nav {
+  &__list {
+    display: flex;  
+    &__item {
+        padding:0 1em;
+      a {
+        color: $color-text;
+        text-transform: uppercase;
+        font-weight:bold;
+        font-size:0.9em;
+      }
+    }
+  }
+}

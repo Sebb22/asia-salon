@@ -1,0 +1,25 @@
+.banner{
+    width:100%;
+    margin-bottom:1em;
+    line-height:1.3em;
+    &__title{
+        color:$red;
+        font-weight:bold;
+        font-size:2rem;
+    }
+
+    &__description{
+        font-weight:500;
+    }
+
+    &__info{
+        font-size:1rem;
+
+        span{
+            background:$red; 
+            padding:0 0.4em;
+            color:$white;
+            font-weight:bold;
+        }
+    }
+}

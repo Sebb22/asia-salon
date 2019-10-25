@@ -1,0 +1,31 @@
+.aside {
+  width: 23%;
+  background: lighten($bg-color, 20%);
+  padding: 1em;
+  color: $white;
+
+  &__picto {
+    width: 70px;
+    height: 70px;
+    border: 2px solid $white;
+    border-radius: 50%;
+    text-align:center;
+    margin:auto;
+    padding-top:0.3em;
+    i {
+      font-size: 3rem;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    margin: 1em 0;
+    letter-spacing: 0.08em;
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: 2px solid $white;
+      padding-top: 0.5em;
+    }
+  }
+}

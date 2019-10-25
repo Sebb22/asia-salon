@@ -1,1 +1,34 @@
+@import 
+    "abstracts/vars";
 
+@import 
+    "~font-awesome/scss/font-awesome", 
+    "~reset-css/sass/reset",
+    '~bootstrap/scss/bootstrap';;
+
+@import
+    "base/base",
+    "base/typo";
+
+@import 
+    "layouts/wrapper",
+    "layouts/header",    
+    "layouts/main",
+    "layouts/banner",
+    "layouts/aside",
+    "layouts/posts",    
+    "layouts/footer";
+
+@import
+    "components/social-nav",
+    "components/logo",
+    "components/main-nav",
+    "components/agenda",
+    "components/footer-nav",
+    "components/footer-copyright";
+    
+    
+
+
+@import 
+    "shame";

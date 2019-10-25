@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+  background-image: url("../assets/images/henry-co-3JFVNo4ukKQ-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  box-shadow: 20px 8px 8px, darken($bg-color, 30%);
+  @media (min-width: $breakpoint-extra-large) {
+    width: $breakpoint-extra-large;
+    margin: auto;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-text;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+//about animation
+@keyframes slidein {
+  from {
+    filter: opacity(0);
+  }
+
+  to {
+    filter: opacity(0.8);
+  }
+}
