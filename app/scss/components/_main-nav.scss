@@ -1,6 +1,13 @@
-.main-nav {
+.main-nav { 
+  @media(max-width:$breakpoint-medium){
+   text-align:center;
+  } 
   &__list {
-    display: flex;  
+    display: flex; 
+    justify-content:space-between;  
+    @media(max-width:$breakpoint-medium){
+      display:block;
+    } 
     &__item {
         padding:0 1em;
       a {

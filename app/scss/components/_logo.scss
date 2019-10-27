@@ -1,17 +1,27 @@
 .logo {
   display: inline-block;
-  background:$white;
-  padding:0.5em;
-  margin-right:0.6em;
+  background: $white;
+  padding: 0.5em;
+  margin-right: 0.6em;
+
+  @media (max-width: $breakpoint-medium) {
+    display: block;
+    width: 85%;
+    margin-bottom:1em;
+  }
+
   &__title {
-    color: darken($bg-color,70%);
+    color: darken($bg-color, 70%);
     font-family: $font-family-logo;
     font-size: 4rem;
+    @media (max-width: $breakpoint-medium) {
+      font-size: 2.5rem;
+    }
   }
   &__subtitle {
-    color: darken($bg-color,70%);
-    font-size:1rem;
+    color: darken($bg-color, 70%);
+    font-size: 1rem;
     font-weight: 300;
-    letter-spacing:0.1rem; 
+    letter-spacing: 0.1rem;
   }
 }

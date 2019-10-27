@@ -3,15 +3,20 @@
   background: lighten($bg-color, 20%);
   padding: 1em;
   color: $white;
+  @media (max-width: $breakpoint-extra-large) {
+    width: 80%;
+    margin:1em auto;
+    padding:3em;
+  }
 
   &__picto {
     width: 70px;
     height: 70px;
     border: 2px solid $white;
     border-radius: 50%;
-    text-align:center;
-    margin:auto;
-    padding-top:0.3em;
+    text-align: center;
+    margin: auto;
+    padding-top: 0.3em;
     i {
       font-size: 3rem;
     }

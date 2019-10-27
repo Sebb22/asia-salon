@@ -3,5 +3,9 @@
     flex-wrap:wrap;
     justify-content:space-between;
     padding: 1em;
-    overflow:hidden;
+    // overflow:hidden;
+
+    @media(max-width:$breakpoint-extra-large){
+        padding: 1em 0;
+    }
 }

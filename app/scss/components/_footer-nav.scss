@@ -4,6 +4,11 @@
       justify-content:space-between;
       width:80%;
       margin:0 auto;
+
+      @media(max-width:$breakpoint-extra-large){
+        display:block;
+        text-align:center;
+      }
     &__item {
       a {
         color: $white;
