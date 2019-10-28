@@ -1,18 +1,22 @@
 .posts {
-  width:75%;
-  @media(max-width:$breakpoint-extra-large){
-    width:100%;
+  width: 75%;
+  @media (max-width: $breakpoint-extra-large) {
+    width: 100%;
   }
 
   .post {
     &__image {
-      background-size:cover;
-      width:100%;
+      background-size: cover;
+      width: 100%;
       min-height: 55vh;
-      position:relative;
+      position: relative;
 
-      @media($breakpoint-extra-large){
-        height:70vh;
+      @media (orientation: landscape) and (max-height: $breakpoint-large) {
+        height: 130vh;
+      }
+
+      @media (max-width: $breakpoint-medium) {
+        height: 90vh;
       }
 
       &:hover {
@@ -36,11 +40,31 @@
       top: 1em;
       right: 1em;
 
-      @media(max-width:$breakpoint-medium){
-        width:80%;
-        height:60%;
+      @media (orientation: landscape) and (max-height: $breakpoint-medium) {
+        display: block;
+        width: 90%;
+        height: 60%;
         position: absolute;
         bottom: 1em;
+        left: 1em;
+      }
+
+      // @media (min-width: $breakpoint-medium) {
+      //   display: block;
+      //   width: 60%;
+      //   height: 80%;
+      //   position: absolute;
+      //   bottom: 1em;
+      //   right: 1em;
+      // }
+
+      @media (max-width: $breakpoint-medium) {
+        display: block;
+        width: 60%;
+        height: 80%;
+        position: absolute;
+        bottom: 1em;
+        right: 1em;
       }
 
       &__about {
@@ -63,4 +87,3 @@
     }
   }
 }
-

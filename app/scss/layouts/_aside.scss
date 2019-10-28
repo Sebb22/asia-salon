@@ -5,8 +5,16 @@
   color: $white;
   @media (max-width: $breakpoint-extra-large) {
     width: 80%;
-    margin:1em auto;
-    padding:3em;
+    margin: 1em auto;
+    padding: 3em;
+    text-align: center;
+  }
+
+  @media (max-width: $breakpoint-medium) {
+    width: 90%;
+    margin: 1em auto;
+    padding: 2em;
+    text-align: center;
   }
 
   &__picto {
@@ -26,6 +34,12 @@
     font-weight: 700;
     margin: 1em 0;
     letter-spacing: 0.08em;
+
+    @media (max-width: $breakpoint-medium) {
+     font-size:1rem;
+    }
+
+
     &::after {
       content: "";
       display: block;

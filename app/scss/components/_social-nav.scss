@@ -1,10 +1,15 @@
 .social-nav {
   width: 100%;
   transition: 1s ease-in-out;
+
+  @media (max-width: 280px) {
+    display: none;
+  }
+
   &.footer {
     margin: 0;
     @media (max-width: $breakpoint-medium) {
-      text-align:center;
+      text-align: center;
     }
   }
 

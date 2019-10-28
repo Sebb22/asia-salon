@@ -11,17 +11,17 @@ var app = {
 
     // targetting scroll event to set header's position to absolute
     if (!app.elements.$body) {
-      app.elements.$wrapper = document.querySelector("body");      
+      app.elements.$wrapper = document.querySelector("body");
       window.onscroll = app.handleScrollOnWrapper;
     }
   },
 
   handleScrollOnWrapper: function () {
     app.elements.$header = document.querySelector('.header');
-
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      app.elements.$header.style.position = 'fixed';
-      app.elements.$header.style.height = '12vh';
+      app.elements.$header.style.position = 'sticky';
+      app.elements.$header.style.top = "0";
+      app.elements.$header.style.minHeight = '12vh';
       document.querySelector('.social-nav').style.display = "none";
       document.querySelector('.logo').style.padding = "0.3em";
       document.querySelector('.logo').style.marginBottom = "1em";
@@ -35,11 +35,8 @@ var app = {
       document.querySelector('.banner').style = "";
       document.querySelector('.logo__title').style = "";
       document.querySelector('.logo__subtitle').style = "";
-      
     }
   },
-
-
 };
 
 $(app.init);  

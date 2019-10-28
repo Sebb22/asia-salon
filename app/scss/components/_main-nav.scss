@@ -5,7 +5,7 @@
   &__list {
     display: flex; 
     justify-content:space-between;  
-    @media(max-width:$breakpoint-medium){
+    @media(max-width:$breakpoint-large){
       display:block;
     } 
     &__item {
