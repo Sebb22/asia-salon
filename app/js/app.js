@@ -31,11 +31,8 @@ var app = {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       app.elements.$header.style.position = 'sticky';
       app.elements.$header.style.top = "0";
-      // app.elements.$header.style.minHeight = '12vh';
-      document.querySelector('.social-nav').style.display = "none";
-     
+      document.querySelector('.social-nav').style.display = "none";     
       document.querySelector('.banner').style.paddingTop = "11em";
-      // document.querySelector('.logo__title').style.fontSize = "3rem";
       document.querySelector('.logo__subtitle').style.lineHeight = "0";
     } else {
       app.elements.$header.style = "";

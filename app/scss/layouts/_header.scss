@@ -7,15 +7,17 @@
   z-index: 10;
 
   &__main {
-    max-width: 90%;
+    min-width: 70%;
     min-height: 12vh;
     display: flex;
+    justify-content:space-between;
     align-items: center;
     margin: 1em auto;
 
     @media (max-width: $breakpoint-small) {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
+      align-content:center;
       flex-wrap: wrap;
     }
   }

@@ -1,6 +1,6 @@
 .menu-toggler {
   text-transform: uppercase;
-  font-size: 0.5rem;
+  font-size: 0.9rem;
   letter-spacing: 0.15em;
   margin: 1em;
   color: $white;
@@ -10,6 +10,9 @@
   padding: 1em;
   background: none;
 
+  @media(max-width:$breakpoint-small){
+    margin:1em auto;
+  }
   @media(min-width:$breakpoint-large){
     font-size: 1rem;
   }
