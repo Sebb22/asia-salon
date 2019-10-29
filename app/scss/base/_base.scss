@@ -17,6 +17,18 @@ body {
     width: $breakpoint-extra-large;
     margin: auto;
   }
+
+  &.menu-visible {
+    .wrapper {
+      filter: blur(8px);
+
+      animation: reveal $duration-slow ease;
+    }
+
+    .menu {
+      visibility: visible;
+    }
+  }
 }
 
 a {

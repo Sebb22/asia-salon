@@ -16,12 +16,15 @@
     "layouts/banner",
     "layouts/aside",
     "layouts/posts",    
-    "layouts/footer";
+    "layouts/footer",
+    "layouts/wrapper",
+    "layouts/menu";
 
 @import
     "components/social-nav",
     "components/logo",
     "components/main-nav",
+    "components/menu-toggler",
     "components/agenda",
     "components/footer-nav",
     "components/footer-copyright";

@@ -10,18 +10,18 @@ $font-size: 16px;
 $font-size-medium: 18px;
 $font-size-large: 20px;
 
-$font-family-content: 'PT Sans', sans-serif;
-$font-family-title: "Roboto slab",serif;
-$font-family-fallback:"Helvetica","Arial", sans-serif;
-$font-family-logo:'Zhi Mang Xing', cursive;
+$font-family-content: "PT Sans", sans-serif;
+$font-family-title: "Roboto slab", serif;
+$font-family-fallback: "Helvetica", "Arial", sans-serif;
+$font-family-logo: "Zhi Mang Xing", cursive;
 
 /*
 about colors
 */
 $white: #fff;
 $black: #000;
-$bg-color:#210207;
-$red:#f4472f;
+$bg-color: #0c5044;
+$red: #f4472f;
 
 $color-text: $white;
 $color-text-alt: $black;
@@ -29,6 +29,8 @@ $color-text-alt: $black;
 /*
 about breakpoints
 */
+$breakpoint-critical:267px;
+$breakpoint-small: 475px;
 $breakpoint-medium: 500px;
 $breakpoint-large: 800px;
 $breakpoint-extra-large: 1200px;

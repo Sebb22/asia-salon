@@ -1,6 +1,6 @@
 .main-nav { 
-  @media(max-width:$breakpoint-medium){
-   text-align:center;
+  @media(max-width:$breakpoint-extra-large){
+   display:none;
   } 
   &__list {
     display: flex; 

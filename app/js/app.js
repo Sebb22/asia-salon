@@ -9,6 +9,12 @@ var app = {
       speed: 20
     });
 
+    // listening click on '.ui-button'
+    if (!app.elements.$menuToggler) {
+      app.elements.$menuToggler = document.querySelector('.menu-toggler');
+      app.elements.$menuToggler.addEventListener('click', app.handleToggleMenu);
+    }
+
     // targetting scroll event to set header's position to absolute
     if (!app.elements.$body) {
       app.elements.$wrapper = document.querySelector("body");
@@ -16,17 +22,20 @@ var app = {
     }
   },
 
+  handleCloseMenu : function(){
+    document.querySelector('body').classList.remove('menu-visible');
+  },
+
   handleScrollOnWrapper: function () {
     app.elements.$header = document.querySelector('.header');
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       app.elements.$header.style.position = 'sticky';
       app.elements.$header.style.top = "0";
-      app.elements.$header.style.minHeight = '12vh';
+      // app.elements.$header.style.minHeight = '12vh';
       document.querySelector('.social-nav').style.display = "none";
-      document.querySelector('.logo').style.padding = "0.3em";
-      document.querySelector('.logo').style.marginBottom = "1em";
+     
       document.querySelector('.banner').style.paddingTop = "11em";
-      document.querySelector('.logo__title').style.fontSize = "3rem";
+      // document.querySelector('.logo__title').style.fontSize = "3rem";
       document.querySelector('.logo__subtitle').style.lineHeight = "0";
     } else {
       app.elements.$header.style = "";
@@ -37,6 +46,20 @@ var app = {
       document.querySelector('.logo__subtitle').style = "";
     }
   },
-};
+
+  handleToggleMenu: function () {
+    console.log('click!!!');
+    event.preventDefault();
+
+    document.querySelector('body').classList.add('menu-visible');
+
+    // listening click on '.ui-button'
+    if (!app.elements.$closeMenu) {
+      app.elements.$closeMenu = document.querySelector('.close-menu');
+      app.elements.$closeMenu.addEventListener('click', app.handleCloseMenu);
+    }
+  },
+}
+
 
 $(app.init);  

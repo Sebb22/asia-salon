@@ -1,12 +1,7 @@
 .social-nav {
   width: 100%;
   transition: 1s ease-in-out;
-
-  @media (max-width: 280px) {
-    display: none;
-  }
-
-  &.footer {
+  .footer {
     margin: 0;
     @media (max-width: $breakpoint-medium) {
       text-align: center;
@@ -43,5 +38,8 @@
         }
       }
     }
+  }
+  @media(max-width:$breakpoint-critical){
+    display:none;
   }
 }
