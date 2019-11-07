@@ -1,17 +1,22 @@
-.footer-nav {    
+.footer-nav {
   &__list {
-      display:flex;
-      justify-content:space-between;
-      width:80%;
-      margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
 
-      @media(max-width:$breakpoint-extra-large){
-        display:block;
-        text-align:center;
-      }
+    @media (max-width: $breakpoint-extra-large) {
+      display: block;
+      text-align: center;
+    }
     &__item {
       a {
         color: $white;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+          opacity: 0.4;
+        }
       }
     }
   }

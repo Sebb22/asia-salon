@@ -7,18 +7,20 @@
   z-index: 10;
 
   &__main {
-    min-width: 70%;
+    min-width: 90%;
     min-height: 12vh;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     margin: 1em auto;
 
     @media (max-width: $breakpoint-small) {
       display: flex;
       justify-content: space-between;
-      align-content:center;
-      flex-wrap: wrap;
+      align-content: center;
+      margin: 0;
+      width: 100%;
+      // flex-wrap: wrap;
     }
   }
 }

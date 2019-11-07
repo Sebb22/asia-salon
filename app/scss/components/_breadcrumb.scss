@@ -1,0 +1,18 @@
+.breadcrumb {
+  width: 100%;
+  background: none;
+  padding: 0;
+  ol {
+    padding: 0;
+  }
+
+  @media (max-width: $breakpoint-extra-large) {
+    padding: 0 1em;
+  }
+
+  &-item {
+    &.active {
+      color: lighten($black, 60%);
+    }
+  }
+}

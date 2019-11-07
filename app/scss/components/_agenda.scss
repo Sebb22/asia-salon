@@ -1,9 +1,9 @@
-.agenda {
+.agenda,
+.news {
   border: 1px solid $white;
   margin-bottom: 1em;
   padding: 0.4em;
   transition: 1s ease-in-out;
-  
 
   &__title {
     font-weight: 600;
@@ -33,5 +33,14 @@
     transform: scale(1.1);
     background: $white;
     color: $color-text-alt;
+  }
+
+  a {
+    color: $white;
+    transition: 1s ease-in-out;
+
+    &:hover {
+      color: $color-text-alt;
+    }
   }
 }

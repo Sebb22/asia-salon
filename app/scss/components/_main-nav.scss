@@ -1,20 +1,25 @@
-.main-nav { 
-  @media(max-width:$breakpoint-extra-large){
-   display:none;
-  } 
+.main-nav {
+  @media (max-width: $breakpoint-extra-large) {
+    display: none;
+  }
   &__list {
-    display: flex; 
-    justify-content:space-between;  
-    @media(max-width:$breakpoint-large){
-      display:block;
-    } 
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $breakpoint-large) {
+      display: block;
+    }
     &__item {
-        padding:0 1em;
+      padding: 0 1em;
       a {
         color: $color-text;
         text-transform: uppercase;
-        font-weight:bold;
-        font-size:0.9em;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+          opacity: 0.4;
+        }
       }
     }
   }

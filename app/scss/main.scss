@@ -18,7 +18,10 @@
     "layouts/posts",    
     "layouts/footer",
     "layouts/wrapper",
-    "layouts/menu";
+    "layouts/menu",
+    "layouts/post",
+    "layouts/planning",
+    "layouts/exhibitors";
 
 @import
     "components/social-nav",
@@ -27,7 +30,8 @@
     "components/menu-toggler",
     "components/agenda",
     "components/footer-nav",
-    "components/footer-copyright";
+    "components/footer-copyright",
+    "components/breadcrumb";
     
     
 

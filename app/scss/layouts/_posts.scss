@@ -19,7 +19,8 @@
         height: 90vh;
       }
 
-      &:hover {
+      &:hover,
+      &:active {
         .post__content {
           display: block;
           transition: opacity 1s, ease-in-out;
@@ -52,7 +53,7 @@
       @media (max-width: $breakpoint-medium) {
         display: inline-block;
         width: 60%;
-        max-height: 60%;
+        max-height: 80%;
         position: absolute;
         bottom: 1em;
         right: 1em;
@@ -71,7 +72,8 @@
         border: 2px solid lighten($bg-color, 35%);
         padding: 0.4em 0.2em;
 
-        &:hover {
+        &:hover,
+        &:active {
           opacity: 1;
         }
       }

@@ -6,8 +6,9 @@
 
   @media (max-width: $breakpoint-small) {
     padding: 0.3em;
-    width: 90%;
+    max-width: 70%;
     margin: 0em auto;
+    display: inline;
   }
 
   &__title {
@@ -31,7 +32,7 @@
 
     @media (max-width: $breakpoint-small) {
       line-height: 0;
-      font-size: 0.7rem;
+      font-size: 0.6rem;
     }
   }
 }
