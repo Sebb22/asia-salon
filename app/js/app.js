@@ -33,7 +33,9 @@ var app = {
   handleScrollOnWrapper: function () {
     app.elements.$header = document.querySelector('.header');
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      app.elements.$header.style.position = '-webkit-sticky';
       app.elements.$header.style.position = 'sticky';
+
       app.elements.$header.style.top = "0";
       document.querySelector('.social-nav').style.display = "none";
       if (app.elements.$banner) {
