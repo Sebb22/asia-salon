@@ -15,8 +15,8 @@ var app = {
       app.elements.$menuToggler.addEventListener('click', app.handleToggleMenu);
     }
 
-    if (!app.elements.$banner) {
-      app.elements.$banner = document.querySelector('.banner');
+    if (!app.elements.$main) {
+      app.elements.$main = document.querySelector('.main');
     }
 
     // targetting scroll event to set header's position to absolute
@@ -32,23 +32,21 @@ var app = {
 
   handleScrollOnWrapper: function () {
     app.elements.$header = document.querySelector('.header');
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      app.elements.$header.style.position = '-webkit-sticky';
-      app.elements.$header.style.position = 'sticky';
-
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 150) {
+      // app.elements.$header.style.position = '-webkit-sticky';
+      // app.elements.$header.style.position = 'sticky';
       app.elements.$header.style.top = "0";
       document.querySelector('.social-nav').style.display = "none";
-      if (app.elements.$banner) {
-        app.elements.$banner.style.paddingTop = "11em";
+      if (app.elements.$main) {
+        app.elements.$main.style.paddingTop = "11em";
       }
-
       document.querySelector('.logo__subtitle').style.lineHeight = "0";
     } else {
       app.elements.$header.style = "";
       document.querySelector('.social-nav').style = "";
       document.querySelector('.logo').style = "";
-      if (app.elements.$banner) {
-        app.elements.$banner.style = "";
+      if (app.elements.$main) {
+        app.elements.$main.style = "";
       }
       document.querySelector('.logo__title').style = "";
       document.querySelector('.logo__subtitle').style = "";
@@ -58,7 +56,6 @@ var app = {
   handleToggleMenu: function () {
     console.log('click!!!');
     event.preventDefault();
-
     document.querySelector('body').classList.add('menu-visible');
 
     // listening click on '.ui-button'

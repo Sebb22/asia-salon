@@ -3,10 +3,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
   @media (max-width: $breakpoint-extra-large) {
     width: 100%;
     padding: 1em;
   }
+
   &__title {
     font-size: 3rem;
     margin-bottom: 1em;
@@ -39,7 +41,7 @@
       flex: 1 0 auto;
       padding: 1em;
       margin: 1em;
-      transition: 1s ease-in-out;
+      transition: 0.5s ease-in-out;
       text-align: center;
       filter: none;
 
