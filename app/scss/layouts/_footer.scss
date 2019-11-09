@@ -1,4 +1,8 @@
-.footer{
-    background:$bg-color;
-    padding:1em;
+.footer {
+  background: lighten($bg-color, 3%);
+  padding: 1em;
+
+  @media (orientation: landscape) and (max-width: $breakpoint-extra-large) {
+    margin-right: 22vw;
+  }
 }

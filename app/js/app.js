@@ -32,13 +32,12 @@ var app = {
 
   handleScrollOnWrapper: function () {
     app.elements.$header = document.querySelector('.header');
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 150) {
-      // app.elements.$header.style.position = '-webkit-sticky';
-      // app.elements.$header.style.position = 'sticky';
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       app.elements.$header.style.top = "0";
+      app.elements.$header.style.padding = "0";
       document.querySelector('.social-nav').style.display = "none";
-      if (app.elements.$main) {
-        app.elements.$main.style.paddingTop = "11em";
+      if (app.elements.$main || window.innerHeight > window.innerWidth) {    
+        app.elements.$main.style.paddingTop = "6em";
       }
       document.querySelector('.logo__subtitle').style.lineHeight = "0";
     } else {
@@ -51,6 +50,7 @@ var app = {
       document.querySelector('.logo__title').style = "";
       document.querySelector('.logo__subtitle').style = "";
     }
+
   },
 
   handleToggleMenu: function () {

@@ -32,6 +32,10 @@
           text-transform: uppercase;
           font-weight: bold;
           font-size: 1.3rem;
+
+          @media (orientation: landscape) and (max-width: $breakpoint-extra-large) {
+            font-size: 1rem;
+          }
         }
 
         a:hover {
@@ -47,5 +51,15 @@
     position: absolute;
     top: 19px;
     right: 21px;
+    font-size: 1.5rem;
+  }
+
+  @media (orientation: landscape) and (max-width: $breakpoint-extra-large) {
+    background-color: $bg-color;
+    width: 35%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-left: 65%;
   }
 }

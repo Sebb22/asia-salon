@@ -41,7 +41,7 @@
       top: 1em;
       right: 1em;
 
-      @media (orientation: landscape) and (max-height: $breakpoint-medium) {
+      @media (orientation: landscape)    {
         display: inline-block;
         width: 90%;
         max-height: 60%;

@@ -22,7 +22,26 @@
       align-content: center;
       margin: 0;
       width: 100%;
-      // flex-wrap: wrap;
+    }
+  }
+
+  //defining header's behavior when orientation:landscape
+  @media (orientation: landscape) and (max-width: $breakpoint-extra-large) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: 100vh;      
+    padding: 0;
+
+    .social-nav {
+      display: none;
+    }
+    .logo {
+      display: none;
+    }
+    .main-nav {
+      text-align: center;
     }
   }
 }
