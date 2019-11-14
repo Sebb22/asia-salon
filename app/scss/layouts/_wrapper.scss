@@ -1,3 +1,6 @@
-.wrapper{
-    // background-color: $bg-color;
+.wrapper > *,
+.menu > * {
+//   position: absolute;
+//   backface-visibility: hidden;
+//   perspective: 1000px;
 }

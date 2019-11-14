@@ -5,9 +5,15 @@ var app = {
   init: function () {
     console.log('init');
 
-    jarallax(document.querySelectorAll('.jarallax'), {
-      speed: 20
-    });
+    //trying to set foreach jarallax element a different speed
+    if (!app.elements.$postImage) {
+      app.elements.$postImage = document.querySelectorAll('.post__image');
+      for (var value of app.elements.$postImage) {
+        value.classList.add('jarallax');
+        value.setAttribute('data-speed', app.getRandom(0.2, 10));
+        jarallax(value);
+      }
+    }
 
     // listening click on '.ui-button'
     if (!app.elements.$menuToggler) {
@@ -26,6 +32,10 @@ var app = {
     }
   },
 
+  getRandom: function (min, max) {
+    return Math.random() * (max - min + 1) + min;
+  },
+
   handleCloseMenu: function () {
     document.querySelector('body').classList.remove('menu-visible');
   },
@@ -36,7 +46,7 @@ var app = {
       app.elements.$header.style.top = "0";
       app.elements.$header.style.padding = "0";
       document.querySelector('.social-nav').style.display = "none";
-      if (app.elements.$main || window.innerHeight > window.innerWidth) {    
+      if (app.elements.$main || window.innerHeight > window.innerWidth) {
         app.elements.$main.style.paddingTop = "6em";
       }
       document.querySelector('.logo__subtitle').style.lineHeight = "0";
