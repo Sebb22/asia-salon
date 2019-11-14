@@ -5,7 +5,7 @@ var app = {
   init: function () {
     console.log('init');
 
-    //trying to set foreach jarallax element a different speed
+    // setting foreach jarallax element a different speed
     if (!app.elements.$postImage) {
       app.elements.$postImage = document.querySelectorAll('.post__image');
       for (var value of app.elements.$postImage) {
@@ -13,11 +13,6 @@ var app = {
         value.setAttribute('data-speed', app.getRandom(0.2, 10));
         jarallax(value);
       }
-      // app.elements.$postImage.forEach(element => {
-      //   element.classList.add('jarallax');
-      //   element.setAttribute('data-speed', app.getRandom(0.2, 10));
-      //   jarallax(element);
-      // });
     }
 
     // listening click on '.ui-button'
@@ -69,7 +64,6 @@ var app = {
   },
 
   handleToggleMenu: function () {
-    console.log('click!!!');
     event.preventDefault();
     document.querySelector('body').classList.add('menu-visible');
 

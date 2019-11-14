@@ -33,6 +33,7 @@
     &__content {
       display: none;
       width: 35%;
+      max-height: 80%;
       background: $white;
       filter: opacity(0.8);
       color: $color-text-alt;
@@ -40,11 +41,12 @@
       position: absolute;
       top: 1em;
       right: 1em;
+      transition:0.5s display ease-in-out;
 
-      @media (orientation: landscape)    {
+      @media (orientation: landscape) and (max-height: $breakpoint-large) {
         display: inline-block;
         width: 90%;
-        max-height: 60%;
+        min-height: 70%;
         position: absolute;
         bottom: 1em;
         left: 1em;
