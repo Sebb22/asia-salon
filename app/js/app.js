@@ -13,6 +13,11 @@ var app = {
         value.setAttribute('data-speed', app.getRandom(0.2, 10));
         jarallax(value);
       }
+      // app.elements.$postImage.forEach(element => {
+      //   element.classList.add('jarallax');
+      //   element.setAttribute('data-speed', app.getRandom(0.2, 10));
+      //   jarallax(element);
+      // });
     }
 
     // listening click on '.ui-button'
