@@ -1,2 +1,15 @@
-/public
-/node_modules
+notes/
+.DS_Store
+/vendor/
+/wp/
+wp-config.php
+/content/*
+!/content/uploads/
+!/content/plugins/
+/content/plugins/*
+!/content/plugins/asia-salon
+!/content/themes/
+/content/themes/*
+!/content/themes/asia-salon
+/content/themes/asia-salon/node_modules
+/config.md
