@@ -7,7 +7,7 @@
     ],
     "require": {
         "johnpbloch/wordpress": "^5.2",
-        "wpackagist-theme/twentynineteen":"*"
+        "wpackagist-theme/twentytwenty":"*"
     },
     "extra": {
         "wordpress-install-dir": "wp",

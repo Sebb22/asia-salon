@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5158db4da4983a4e8c57ca694df3a01",
+    "content-hash": "4335cb46f57de221e783d3cb9671064b",
     "packages": [
         {
             "name": "composer/installers",
@@ -257,22 +257,22 @@
             "time": "2018-11-09T20:10:38+00:00"
         },
         {
-            "name": "wpackagist-theme/twentynineteen",
-            "version": "1.4",
+            "name": "wpackagist-theme/twentytwenty",
+            "version": "1.0",
             "source": {
                 "type": "svn",
-                "url": "https://themes.svn.wordpress.org/twentynineteen/",
-                "reference": "1.4"
+                "url": "https://themes.svn.wordpress.org/twentytwenty/",
+                "reference": "1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentynineteen.1.4.zip"
+                "url": "https://downloads.wordpress.org/theme/twentytwenty.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/twentynineteen/"
+            "homepage": "https://wordpress.org/themes/twentytwenty/"
         }
     ],
     "packages-dev": [],
