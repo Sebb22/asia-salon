@@ -23,7 +23,7 @@
     - Renseigner la constante `WP_CONTENT_URL` avec notre url locale
 - Changer les droits des fichiers/dossier de mon projet
 ```bash
-sudo chown -R <user>:www-data .
+sudo chown -R mint:www-data .
 sudo find . -type f -exec chmod 664 {} +
 sudo find . -type d -exec chmod 775 {} +
 sudo chmod 644 .htaccess

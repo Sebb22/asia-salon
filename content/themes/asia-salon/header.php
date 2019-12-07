@@ -4,6 +4,7 @@
 <head>
   <meta charset="<meta <?php bloginfo('charset'); ?>>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php bloginfo('title'); ?></title>
   <?php wp_head(); ?>
 </head>
 
@@ -19,8 +20,8 @@
       </nav>
       <div class="header__main">
         <div class="logo">
-          <a href="index.html">
-            <h2 class="logo__title">Salon de l'Asie </br>de Compiègne</h2>
+          <a href="<?= home_url(); ?>">
+            <h2 class="logo__title">Salon de l'Asie </br>de Compiegne</h2>
             <p class="logo__subtitle">Le salon des cultures asiatiques</p>
           </a>
         </div>
@@ -32,16 +33,13 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__list__item">
-              <a href="news.html">news</a>
+              <a href="<?= home_url('les-articles/'); ?>">Articles</a>
             </li>
             <li class="main-nav__list__item">
-              <a href="planning.html">animations</a>
+              <a href="<?= home_url('le-programme/'); ?>">Programme</a>
             </li>
             <li class="main-nav__list__item">
-              <a href="exhibitors.html">exposants</a>
-            </li>
-            <li class="main-nav__list__item">
-              <a href="#">programme</a>
+              <a href="<?= home_url('les-exposants/'); ?>">Exposants</a>
             </li>
           </ul>
         </nav>
