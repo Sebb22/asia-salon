@@ -4,7 +4,7 @@
   <nav class="footer-nav">
     <ul class="footer-nav__list">
       <li class="footer-nav__list__item">
-        <a href="#">Plan du site</a>
+        <a href="<?= home_url('plan-du-site'); ?>">Plan du site</a>
       </li>
       <li class="footer-nav__list__item">
         <a href="#">Mentions légales</a>
@@ -35,16 +35,16 @@
   <nav class="menu__main-nav">
     <ul class="menu__main-nav__list">
       <li class="menu__main-nav__list__item">
-        <a href="index.html">accueil</a>
+        <a href="<?= home_url(); ?>">Accueil</a>
       </li>
       <li class="menu__main-nav__list__item">
-        <a href="news.html">news</a>
+        <a href="<?= home_url('les-articles/'); ?>">Articles</a>
       </li>
       <li class="menu__main-nav__list__item">
-        <a href="planning.html">animations</a>
+        <a href="<?= home_url('le-programme/'); ?>">Programme</a>
       </li>
       <li class="menu__main-nav__list__item">
-        <a href="exhibitors.html">exposants</a>
+        <a href="<?= home_url('les-exposants/'); ?>">Exposants</a>
       </li>
     </ul>
   </nav>

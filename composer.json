@@ -8,7 +8,9 @@
     "require": {
         "johnpbloch/wordpress": "^5.2",
         "wpackagist-theme/twentytwenty":"*",
-        "wpackagist-plugin/advanced-custom-fields":"*"
+        "wpackagist-plugin/advanced-custom-fields":"*",
+        "wpackagist-plugin/wordpress-seo":"*",
+        "wpackagist-plugin/wp-sitemap-page":"*"
     },
     "extra": {
         "wordpress-install-dir": "wp",

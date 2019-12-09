@@ -4,6 +4,8 @@
 <head>
   <meta charset="<meta <?php bloginfo('charset'); ?>>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="descripiton" content="Le salon de l'Asie de Compiègne, c'est le 29 mars 2020, à Compiègne, au Manège de l'état-major">
+  <meta name="robots" content="index,follow">
   <title><?php bloginfo('title'); ?></title>
   <?php wp_head(); ?>
 </head>

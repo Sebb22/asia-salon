@@ -1,9 +1,7 @@
 <?php
 $args =
     [
-        'post_type'      => 'post',
-        'category'    => 3,
-        'posts_per_page' => 1
+        'p' => 25
     ];
 $wp_query = new WP_Query($args);
 if ($wp_query->have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post();
