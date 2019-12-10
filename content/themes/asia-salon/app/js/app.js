@@ -51,7 +51,7 @@ var app = {
       }
       document.querySelector('.logo__subtitle').style.lineHeight = "0";
     } else {
-      app.elements.$header.style = "";
+      // app.elements.$header.style = "";
       document.querySelector('.social-nav').style = "";
       document.querySelector('.logo').style = "";
       if (app.elements.$main) {

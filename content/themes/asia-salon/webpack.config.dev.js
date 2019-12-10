@@ -20,6 +20,7 @@ const watchMode = process.env.NODE_ENV === 'watch';
 let config = {
   entry: [
     './app/js/app.js',
+    './app/js/wp-customizer.js',
     './app/scss/main.scss',
   ],
   mode: 'development',

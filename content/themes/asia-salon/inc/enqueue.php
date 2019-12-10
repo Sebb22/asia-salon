@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('asiasalon_scripts')){
+if (!function_exists('asiasalon_scripts')) {
 
     function asiasalon_scripts()
     {
@@ -17,11 +17,13 @@ if (!function_exists('asiasalon_scripts')){
             [],
             '1.0.0',
             true
-        );       
+        );
+    }
+
+
+
+    add_action('wp_enqueue_scripts', 'asiasalon_scripts');
 }
 
 
-
-add_action('wp_enqueue_scripts', 'asiasalon_scripts');
-}
 

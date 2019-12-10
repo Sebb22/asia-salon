@@ -12,7 +12,10 @@
 
 <body <?php body_class(); ?>>
   <div class="wrapper">
-    <header class="header">
+    <?php if (get_theme_mod('asia_color')) : ?>
+      <?php $color = get_theme_mod('asia_color'); ?>
+      <header class="header" style="background-color:<?= $color; ?>">
+      <?php endif; ?>
       <nav class="social-nav">
         <ul class="social-nav__list">
           <li class="social-nav__list__item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -46,5 +49,5 @@
           </ul>
         </nav>
       </div>
-    </header>
-    <main class="main">
+      </header>
+      <main class="main">
