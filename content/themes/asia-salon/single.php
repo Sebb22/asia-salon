@@ -14,6 +14,8 @@ get_header();
         <section class="post">
             <h1 class="post__title"><?php bloginfo('title'); ?> </br> <?php the_title(); ?></h1>
             <p class="post__infos"> publié par <?php the_author(); ?> le <?php the_date(); ?> à <?php the_time(); ?></p>
+
+     
             <div class="post__image jarallax" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
             </div>
             <p class="post__content"><?php the_content(); ?></p>
@@ -21,7 +23,9 @@ get_header();
 <?php endwhile;
 endif; ?>
 
-<aside class="aside">
+<?php if (get_theme_mod('asia_aside_color')) : $color = get_theme_mod('asia_aside_color'); ?>
+    <aside class="aside" style="background-color:<?= $color; ?>">
+    <?php endif; ?>
     <div class="aside__picto"><i class="fa fa-newspaper-o" aria-hidden="true"></i></div>
     <h2 class="aside__title">Autres articles</h2>
     <?php
@@ -46,7 +50,7 @@ endif; ?>
     <?php endwhile;
         wp_reset_postdata();
     endif; ?>
-</aside>
+    </aside>
 
-<?php
-get_footer();
+    <?php
+    get_footer();

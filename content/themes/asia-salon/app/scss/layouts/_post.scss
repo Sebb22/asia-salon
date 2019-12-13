@@ -24,5 +24,12 @@
 
   &__content {
     margin-top: 1em;
+
+    &__about {
+      background: $bg-color;
+      padding: 0.2em 1em;
+      color: $white;
+      margin-bottom: 0.2em;
+    }
   }
 }

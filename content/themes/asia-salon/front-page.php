@@ -8,8 +8,11 @@ get_header();
 <section class="posts">
     <?php get_template_part('template-part/posts'); ?>
 </section>
-<section class="aside">
+
+<?php if (get_theme_mod('asia_aside_color')) : $color = get_theme_mod('asia_aside_color'); ?>
+    <section class="aside" style="background-color:<?= $color; ?>">
+    <?php endif; ?>
     <?php get_template_part('template-part/aside'); ?>
-</section>
-<?php
-get_footer();
+    </section>
+    <?php
+    get_footer();

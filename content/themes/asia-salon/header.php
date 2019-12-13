@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<?php if (get_theme_mod('asia_background_color')) : $color = get_theme_mod('asia_background_color'); ?>
+  <html <?php language_attributes(); ?>style="background-color:<?= $color; ?>">
+<?php endif; ?>
 
 <head>
   <meta charset="<meta <?php bloginfo('charset'); ?>>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="descripiton" content="Le salon de l'Asie de Compiègne, c'est le 29 mars 2020, à Compiègne, au Manège de l'état-major">
+  <meta name="descripiton" content="Le salon de l'Asie de Compiègne, c'est le 29 mars 2020, à Compiègne, au Manège de l'état-major. Au programme: arts martiaux, culture, gastronomie, rencontres, animations, démonstrations">
   <meta name="robots" content="index,follow">
   <title><?php bloginfo('title'); ?></title>
   <?php wp_head(); ?>
@@ -12,9 +14,9 @@
 
 <body <?php body_class(); ?>>
   <div class="wrapper">
-    <?php if (get_theme_mod('asia_color')) : ?>
-      <?php $color = get_theme_mod('asia_color'); ?>
-      <header class="header" style="background-color:<?= $color; ?>">
+    <?php if (get_theme_mod('asia_header_color')) : ?>
+      <?php $headerColor = get_theme_mod('asia_header_color'); ?>
+      <header class="header" style="background:<?= $headerColor; ?>">
       <?php endif; ?>
       <nav class="social-nav">
         <ul class="social-nav__list">

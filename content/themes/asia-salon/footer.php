@@ -9,7 +9,7 @@
         <a href="<?= home_url('plan-du-site'); ?>">Plan du site</a>
       </li>
       <li class="footer-nav__list__item">
-        <a href="#">Mentions légales</a>
+        <a href="<?= home_url('mentions-legales'); ?>">Mentions légales</a>
       </li>
       <li class="footer-nav__list__item">
         <a href="#">Contact</a>

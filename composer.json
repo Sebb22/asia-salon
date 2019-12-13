@@ -10,7 +10,8 @@
         "wpackagist-theme/twentytwenty":"*",
         "wpackagist-plugin/advanced-custom-fields":"*",
         "wpackagist-plugin/wordpress-seo":"*",
-        "wpackagist-plugin/wp-sitemap-page":"*"
+        "wpackagist-plugin/wp-sitemap-page":"*",
+        "wpackagist-plugin/what-the-file":"*"
     },
     "extra": {
         "wordpress-install-dir": "wp",
