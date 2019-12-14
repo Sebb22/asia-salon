@@ -2,6 +2,10 @@ import 'jarallax/dist/jarallax';
 
 var app = {
   elements: [],
+  baseUrl:
+    "http://localhost/asia-salon/",
+  jsonUrl: "wp-admin/admin-ajax.php",
+
   init: function () {
     console.log('init');
 
@@ -30,7 +34,28 @@ var app = {
       app.elements.$wrapper = document.querySelector("body");
       window.onscroll = app.handleScrollOnWrapper;
     }
+
+    // listening click on '#search-logo'
+    if (!app.elements.$searchLogo) {
+      app.elements.$searchLogo = document.querySelector("#search-logo");
+      app.elements.$searchLogo.addEventListener('click', app.displaySearchForm);
+    }
   },
+
+  displaySearchForm: function () {
+    event.preventDefault();
+    console.log('click!');
+    //emptying main nav to display search form
+    // app.elements.$mainNavListItem = document.querySelectorAll('.main-nav__list__item');
+    // console.log(app.elements.$mainNavListItem);
+    // for (let index = 0; index < app.elements.$mainNavListItem.length; index++) {
+    //   var listItem = app.elements.$mainNavListItem[index];
+    //   listItem.style.display = "none";
+    // }
+
+
+  },
+
 
   getRandom: function (min, max) {
     return Math.random() * (max - min + 1) + min;
@@ -72,7 +97,7 @@ var app = {
       app.elements.$closeMenu = document.querySelector('.close-menu');
       app.elements.$closeMenu.addEventListener('click', app.handleCloseMenu);
     }
-  },
+  }
 }
 
 

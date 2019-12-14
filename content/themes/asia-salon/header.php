@@ -48,6 +48,9 @@
             <li class="main-nav__list__item">
               <a href="<?= home_url('les-exposants/'); ?>">Exposants</a>
             </li>
+            <li class="main-nav__list__item">
+              <i class="fa fa-search-plus" id="search-logo" aria-hidden="true"></i>
+            </li>
           </ul>
         </nav>
       </div>
