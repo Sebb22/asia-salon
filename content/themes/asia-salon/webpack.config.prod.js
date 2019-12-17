@@ -12,7 +12,6 @@ const TerserPlugin = require('terser-webpack-plugin');
 let config = {
   entry: [
     './app/js/app.js',
-    './app/js/wp-customizer.js',
     './app/scss/main.scss',
   ],
   mode: 'production',

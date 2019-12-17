@@ -20,7 +20,6 @@ const watchMode = process.env.NODE_ENV === 'watch';
 let config = {
   entry: [
     './app/js/app.js',
-    './app/js/wp-customizer.js',
     './app/scss/main.scss',
   ],
   mode: 'development',
@@ -141,7 +140,7 @@ let config = {
       }
     ),
     new webpack.ProvidePlugin({
-      axios:'axios'
+      axios: 'axios'
     }),
   ]
 };

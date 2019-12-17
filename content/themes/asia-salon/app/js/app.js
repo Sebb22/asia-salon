@@ -8,7 +8,6 @@ var app = {
 
   init: function () {
     console.log('init');
-
     // setting foreach jarallax element a different speed
     if (!app.elements.$postImage) {
       app.elements.$postImage = document.querySelectorAll('.post__image');
@@ -40,19 +39,22 @@ var app = {
       app.elements.$searchLogo = document.querySelector("#search-logo");
       app.elements.$searchLogo.addEventListener('click', app.displaySearchForm);
     }
+
+    app.elements.$adminBarCustomize = document.querySelector("#wp-admin-bar-customize");
+    if (!app.elements.$adminBarCustomize) {
+      try {
+        app.handleWpCustomize();
+      }
+      catch (e) {
+      }
+    }
+
+
   },
 
   displaySearchForm: function () {
     event.preventDefault();
     console.log('click!');
-    //emptying main nav to display search form
-    // app.elements.$mainNavListItem = document.querySelectorAll('.main-nav__list__item');
-    // console.log(app.elements.$mainNavListItem);
-    // for (let index = 0; index < app.elements.$mainNavListItem.length; index++) {
-    //   var listItem = app.elements.$mainNavListItem[index];
-    //   listItem.style.display = "none";
-    // }
-
 
   },
 
@@ -97,8 +99,41 @@ var app = {
       app.elements.$closeMenu = document.querySelector('.close-menu');
       app.elements.$closeMenu.addEventListener('click', app.handleCloseMenu);
     }
+  },
+
+  handleWpCustomize: function () {
+    wp.customize('asia_header_color', function (value) {
+      value.bind(function (newval) {
+        document.querySelector('.header').style.background = newval;
+        document.querySelector('.menu').style.background = newval;
+      });
+    });
+
+    wp.customize('asia_footer_color', function (value) {
+      value.bind(function (newval) {
+        document.querySelector('.footer').style.background = newval;
+      });
+    });
+
+    wp.customize('asia_title_color', function (value) {
+      value.bind(function (newval) {
+        document.querySelector('.banner__title').style.background = newval;
+        document.querySelector('.banner__detail').style.background = newval;
+      });
+    });
+
+    wp.customize('asia_aside_color', function (value) {
+      value.bind(function (newval) {
+        document.querySelector('.aside').style.background = newval;
+      });
+    });
+
+    wp.customize('asia_background_color', function (value) {
+      value.bind(function (newval) {
+        document.querySelector('html').style.background = newval;
+      });
+    });
   }
 }
-
 
 $(app.init);  

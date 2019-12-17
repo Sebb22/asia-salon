@@ -10,17 +10,19 @@ get_header();
     </ol>
 </nav>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php
+if (have_posts()) : while (have_posts()) : the_post(); ?>
         <section class="post">
             <h1 class="post__title"><?php bloginfo('title'); ?> </br> <?php the_title(); ?></h1>
             <p class="post__infos"> publié par <?php the_author(); ?> le <?php the_date(); ?> à <?php the_time(); ?></p>
 
-     
+
             <div class="post__image jarallax" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
             </div>
             <p class="post__content"><?php the_content(); ?></p>
         </section>
 <?php endwhile;
+    wp_reset_postdata();
 endif; ?>
 
 <?php if (get_theme_mod('asia_aside_color')) : $color = get_theme_mod('asia_aside_color'); ?>
@@ -35,6 +37,7 @@ endif; ?>
             'order'          => 'rand',
             'category__not_in'    => 3,
             'post__not_in'     => array(get_the_id()),
+            'meta_query' => array(array('key' => '_thumbnail_id')), 
             'posts_per_page' => 2
         ];
     $wp_query = new WP_Query($args);
