@@ -36,7 +36,7 @@ var app = {
 
     // listening click on '#search-logo'
     if (!app.elements.$searchLogo) {
-      app.elements.$searchLogo = document.querySelector("#search-logo");
+      app.elements.$searchLogo = document.querySelector(".is-search-form-toggler");
       app.elements.$searchLogo.addEventListener('click', app.displaySearchForm);
     }
 
@@ -54,8 +54,18 @@ var app = {
 
   displaySearchForm: function () {
     event.preventDefault();
-    console.log('click!');
-
+    var navElement = document.querySelectorAll('.main-nav__list__item:not(.is-search-form-toggler)');
+    console.log(navElement);
+    for (let index = 0; index < navElement.length; index++) {
+      const element = navElement[index];
+      element.style.display = 'none';
+    }
+    document.querySelector('.is-search-form').style.display = 'block';
+    var searchToggler = document.createElement('i');
+    searchToggler.className = "fa fa-search-minus";
+    searchToggler.ariaHidden = "true";
+    document.querySelector('.is-search-form-toggler').innerHTML='';
+    document.querySelector('.is-search-form-toggler').appendChild(searchToggler);
   },
 
 

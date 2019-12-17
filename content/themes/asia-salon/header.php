@@ -48,11 +48,17 @@
             <li class="main-nav__list__item">
               <a href="<?= home_url('les-exposants/'); ?>">Exposants</a>
             </li>
-            <li class="main-nav__list__item">
+            <li class="main-nav__list__item is-search-form">
+              <?php get_search_form(); ?>
+            </li>
+            <li class="main-nav__list__item is-search-form-toggler">
               <i class="fa fa-search-plus" id="search-logo" aria-hidden="true"></i>
             </li>
+
           </ul>
         </nav>
+
+
       </div>
       </header>
       <main class="main">
