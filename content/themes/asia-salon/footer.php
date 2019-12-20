@@ -31,7 +31,10 @@
 
   </div>
 
-  <div class="menu">
+  <?php if (get_theme_mod('asia_header_color')) : ?>
+    <?php $color = get_theme_mod('asia_header_color'); ?>
+    <div class="menu" style="background-color:<?= $color; ?>">
+    <?php endif; ?>
     <a href="#" class="ui-button close-menu">
       <i class="fa fa-times" aria-hidden="true"></i>
     </a>
@@ -54,10 +57,10 @@
         </li>
       </ul>
     </nav>
-  </div>
+    </div>
 
-  <script src="js/app.js"></script>
-  <?php wp_footer(); ?>
-  </body>
+    <script src="js/app.js"></script>
+    <?php wp_footer(); ?>
+    </body>
 
-  </html>
+    </html>

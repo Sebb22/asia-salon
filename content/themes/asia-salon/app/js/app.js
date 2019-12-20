@@ -36,7 +36,7 @@ var app = {
 
     // listening click on '#search-logo'
     if (!app.elements.$searchLogo) {
-      app.elements.$searchLogo = document.querySelector(".is-search-form-toggler");
+      app.elements.$searchLogo = document.querySelector(".fa-search-plus");
       app.elements.$searchLogo.addEventListener('click', app.displaySearchForm);
     }
 
@@ -54,18 +54,26 @@ var app = {
 
   displaySearchForm: function () {
     event.preventDefault();
-    var navElement = document.querySelectorAll('.main-nav__list__item:not(.is-search-form-toggler)');
-    console.log(navElement);
-    for (let index = 0; index < navElement.length; index++) {
-      const element = navElement[index];
-      element.style.display = 'none';
+    var target = event.currentTarget;
+    if (target.className === "fa fa-search-plus") {
+      target.classList.remove('fa-search-plus');
+      target.classList.add('fa-times');
+      app.elements.$navElement = document.querySelectorAll('.main-nav__list__item:not(.is-search-form-toggler)');
+      for (let index = 0; index < app.elements.$navElement.length; index++) {
+        const element = app.elements.$navElement[index];
+        element.style.display = 'none';
+        document.querySelector('.is-search-form').style.display = 'block';
+      }
+    } else if (target.className === "fa fa-times") {
+      target.classList.remove('fa-times');
+      target.classList.add('fa-search-plus');
+      app.elements.$navElement = document.querySelectorAll('.main-nav__list__item:not(.is-search-form-toggler)');
+      for (let index = 0; index < app.elements.$navElement.length; index++) {
+        const element = app.elements.$navElement[index];
+        element.style.display = 'block';
+        document.querySelector('.is-search-form').style.display = 'none';
+      }
     }
-    document.querySelector('.is-search-form').style.display = 'block';
-    var searchToggler = document.createElement('i');
-    searchToggler.className = "fa fa-search-minus";
-    searchToggler.ariaHidden = "true";
-    document.querySelector('.is-search-form-toggler').innerHTML='';
-    document.querySelector('.is-search-form-toggler').appendChild(searchToggler);
   },
 
 
