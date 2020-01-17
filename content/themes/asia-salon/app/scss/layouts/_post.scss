@@ -15,11 +15,13 @@
     margin-bottom: 1em;
   }
 
-  &__image {
+  &__picture {
+    display:block;
     width: 100%;
-    height: 50vh;
-    background-size: cover;
-    background-position: top;
+    // min-height: 85vh;
+    // background-size: cover;
+    // background-position: center;
+    background-repeat: no-repeat;
   }
 
   &__content {

@@ -21,7 +21,7 @@ Template Name: Page exposants
                 $logo = get_field('logo');
                 ?>
                 <li class="info__list__item" style="background-image:url('<?php echo 'http://' . $logo['url'] ?>')">
-                    <a href="<?php echo get_field('link'); ?> ">
+                    <a href="<?php echo get_field('link'); ?> " target="_blank">
                     </a>
                     <h2 class="info__list__item__title"> <?php the_title(); ?> </h2>
                 </li>

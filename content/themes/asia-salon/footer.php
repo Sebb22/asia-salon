@@ -12,7 +12,7 @@
         <a href="<?= home_url('les-mentions-legales'); ?>">Mentions légales</a>
       </li>
       <li class="footer-nav__list__item">
-        <a href="#">Contact</a>
+        <a href="<?= home_url('contact'); ?>">Contact</a>
       </li>
     </ul>
   </nav>

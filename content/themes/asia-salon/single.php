@@ -16,13 +16,12 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
             <h1 class="post__title"><?php bloginfo('title'); ?> </br> <?php the_title(); ?></h1>
             <p class="post__infos"> publié par <?php the_author(); ?> le <?php the_date(); ?> à <?php the_time(); ?></p>
 
-
-            <div class="post__image jarallax" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
-            </div>
+            <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="post__picture">
+            <!-- <div class="post__picture" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
+            </div> -->
             <p class="post__content"><?php the_content(); ?></p>
         </section>
 <?php endwhile;
-    wp_reset_postdata();
 endif; ?>
 
 <?php if (get_theme_mod('asia_aside_color')) : $color = get_theme_mod('asia_aside_color'); ?>

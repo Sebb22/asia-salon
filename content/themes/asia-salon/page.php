@@ -11,4 +11,3 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
 endif; ?>
 <?php
 get_footer();
-?>

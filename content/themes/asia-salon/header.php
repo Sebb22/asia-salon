@@ -28,8 +28,8 @@
       <div class="header__main">
         <div class="logo">
           <a href="<?= home_url(); ?>">
-            <h2 class="logo__title">Salon de l'Asie </br>de Compiegne</h2>
-            <p class="logo__subtitle">Le salon des cultures asiatiques</p>
+            <!-- <h2 class="logo__title">Salon de l'Asie </br>de Compiegne</h2>
+            <p class="logo__subtitle">Le salon des cultures asiatiques</p> -->
           </a>
         </div>
 

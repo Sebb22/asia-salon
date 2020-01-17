@@ -18,7 +18,8 @@ if ($wp_query->have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_
                 <?php if (get_theme_mod('asia_aside_color')) : $color = get_theme_mod('asia_aside_color'); ?>
                     <span class="post__content__about" style="background-color:<?= $color; ?>">
                     <?php endif; ?>
-                    <?php $category = get_the_category();
+                    <?php 
+                    $category = get_the_category();
                             foreach ($category as $key => $value) {
                                 echo strtoupper($value->name);
                             }

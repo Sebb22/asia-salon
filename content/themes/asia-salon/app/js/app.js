@@ -135,7 +135,7 @@ var app = {
 
     wp.customize('asia_title_color', function (value) {
       value.bind(function (newval) {
-        document.querySelector('.banner__title').style.background = newval;
+        document.querySelector('.banner__title').style.color = newval;
         document.querySelector('.banner__detail').style.background = newval;
       });
     });
