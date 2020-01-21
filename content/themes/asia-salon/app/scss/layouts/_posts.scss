@@ -7,9 +7,9 @@
   .post {
     &__image {
       background-size: cover;
-      background-position: center center;
+      background-position: bottom center;
       width: 100%;
-      min-height: 55vh;
+      height: 55vh;
       position: relative;
 
       @media (orientation: landscape) and (max-height: $breakpoint-large) {
@@ -56,7 +56,7 @@
       @media (max-width: $breakpoint-medium) {
         display: inline-block;
         width: 60%;
-        max-height: 45%;
+        max-height: 60%;
         position: absolute;
         bottom: 1em;
         right: 1em;

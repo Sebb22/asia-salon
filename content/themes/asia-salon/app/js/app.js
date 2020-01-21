@@ -94,16 +94,12 @@ var app = {
       if (app.elements.$main || window.innerHeight > window.innerWidth) {
         app.elements.$main.style.paddingTop = "6em";
       }
-      document.querySelector('.logo__subtitle').style.lineHeight = "0";
     } else {
       // app.elements.$header.style = "";
       document.querySelector('.social-nav').style = "";
-      document.querySelector('.logo').style = "";
       if (app.elements.$main) {
         app.elements.$main.style = "";
       }
-      document.querySelector('.logo__title').style = "";
-      document.querySelector('.logo__subtitle').style = "";
     }
 
   },
