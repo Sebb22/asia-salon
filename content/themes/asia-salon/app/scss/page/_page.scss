@@ -1,0 +1,21 @@
+.page {
+  &__title {
+    display: block;
+    width: 100%;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width:$breakpoint-medium){
+        flex-wrap:wrap;
+    }
+    .contact-info__part {
+    
+      width: 90%;
+      margin:0 auto;
+    }
+  }
+}

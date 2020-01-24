@@ -13,8 +13,9 @@ var app = {
       app.elements.$postImage = document.querySelectorAll('.post__image');
       for (var value of app.elements.$postImage) {
         value.classList.add('jarallax');
-        value.setAttribute('data-speed', app.getRandom(0.2, 10));
+        value.setAttribute('data-speed', app.getRandom(0.2, 0.5));
         jarallax(value);
+        console.log(value);
       }
     }
 

@@ -6,7 +6,10 @@
   }
   &__title {
     font-size: 3rem;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.3em; 
+    @media(max-width:$breakpoint-small){
+      font-size: 1rem;
+    }
   }
 
   &__infos {
@@ -26,6 +29,12 @@
 
   &__content {
     margin-top: 1em;
+
+    &__title{
+      @media(max-width:$breakpoint-small){
+        font-size: 1rem;
+      }
+    }
 
     &__about {
       background: $bg-color;

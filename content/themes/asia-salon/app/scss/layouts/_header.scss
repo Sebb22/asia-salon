@@ -4,7 +4,7 @@
   padding: 1em 1em 0;
   display: flex;
   flex-wrap: wrap;
-  z-index: 10;
+  z-index:30;
   position: -webkit-sticky;
   position: sticky;
 
@@ -23,6 +23,13 @@
       margin: 0;
       width: 100%;
     }
+
+    @media (orientation: landscape) and (max-width: $breakpoint-extra-large) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: center;
+    }
   }
 
   //defining header's behavior when orientation:landscape
@@ -38,7 +45,8 @@
       display: none;
     }
     .logo {
-      display: none;
+      display: block;
+      width:100%;
     }
     .main-nav {
       text-align: center;

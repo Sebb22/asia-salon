@@ -27,8 +27,8 @@ endif; ?>
 <?php if (get_theme_mod('asia_aside_color')) : $color = get_theme_mod('asia_aside_color'); ?>
     <aside class="aside" style="background-color:<?= $color; ?>">
     <?php endif; ?>
-    <div class="aside__picto"><i class="fa fa-newspaper-o" aria-hidden="true"></i></div>
-    <h2 class="aside__title">Autres articles</h2>
+    <div class="aside__picto"> <a href="<?= home_url('les-articles'); ?>"><i class="fa fa-newspaper-o" aria-hidden="true"></i></div>
+    <h2 class="aside__title">Autres articles</a></h2>
     <?php
     $args =
         [
@@ -36,7 +36,7 @@ endif; ?>
             'order'          => 'rand',
             'category__not_in'    => 3,
             'post__not_in'     => array(get_the_id()),
-            'meta_query' => array(array('key' => '_thumbnail_id')), 
+            'meta_query' => array(array('key' => '_thumbnail_id')),
             'posts_per_page' => 2
         ];
     $wp_query = new WP_Query($args);

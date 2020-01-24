@@ -18,11 +18,11 @@
   </nav>
   <nav class="footer__social-nav">
     <ul class="footer__social-nav__list ">
-      <li class="footer__social-nav__list__item "><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <li class="footer__social-nav__list__item "><a href="https://fr-fr.facebook.com/camco60/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
       </li>
-      <li class="footer__social-nav__list__item "><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-      </li>
-      <li class="footer__social-nav__list__item "><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <!-- <li class="footer__social-nav__list__item "><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+      </li> -->
+      <li class="footer__social-nav__list__item "><a href="https://www.instagram.com/camco_60/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
       </li>
     </ul>
   </nav>
@@ -41,7 +41,12 @@
     <nav class="menu__main-nav">
       <ul class="menu__main-nav__list">
         <li class="menu__main-nav__list__item">
-          <a href="<?= home_url(); ?>">Accueil</a>
+        <div class="logo is-modal">
+          <a href="<?= home_url(); ?>">
+            <!-- <h2 class="logo__title">Salon de l'Asie </br>de Compiegne</h2>
+            <p class="logo__subtitle">Le salon des cultures asiatiques</p> -->
+          </a>
+        </div>
         </li>
         <li class="menu__main-nav__list__item">
           <a href="<?= home_url('les-articles/'); ?>">Articles</a>

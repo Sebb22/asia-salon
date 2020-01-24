@@ -1,9 +1,25 @@
 .agenda,
 .news {
   border: 1px solid $white;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   padding: 0.4em;
   transition: 1s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 10;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, transparentize($black, 0), transparentize($black, 1));
+    z-index: -1;
+  }
+ 
 
   &__title {
     font-weight: 600;

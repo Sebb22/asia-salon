@@ -23,6 +23,14 @@
         text-transform: uppercase;
         font-weight: bold;
 
+        &:first-child {
+          @media (max-width: $breakpoint-large) {
+            display: inline-block;
+            width: 100%;
+            height: 20vh;
+          }
+        }
+
         &:last-child {
           border: none;
         }
