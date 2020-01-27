@@ -14,7 +14,7 @@ get_header();
 if (have_posts()) : while (have_posts()) : the_post(); ?>
         <section class="post">
             <h1 class="post__title"><?php bloginfo('title'); ?> </br> <?php the_title(); ?></h1>
-            <p class="post__infos"> publié par <?php the_author(); ?> le <?php the_date(); ?> à <?php the_time(); ?></p>
+            <p class="post__infos"> publié par <?php the_author(); ?></br> le <?php the_date(); ?> à <?php the_time(); ?></p>
 
             <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="post__picture">
             <!-- <div class="post__picture" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">

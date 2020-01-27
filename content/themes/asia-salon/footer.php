@@ -57,7 +57,7 @@
         <li class="menu__main-nav__list__item">
           <a href="<?= home_url('les-exposants/'); ?>">Exposants</a>
         </li>
-        <li class="main-nav__list__item">
+        <li class="menu__main-nav__list__item">
           <?= get_search_form(); ?>
         </li>
       </ul>

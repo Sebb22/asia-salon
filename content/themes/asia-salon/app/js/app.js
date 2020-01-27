@@ -15,7 +15,6 @@ var app = {
         value.classList.add('jarallax');
         value.setAttribute('data-speed', app.getRandom(0.2, 0.5));
         jarallax(value);
-        console.log(value);
       }
     }
 
@@ -49,6 +48,7 @@ var app = {
       catch (e) {
       }
     }
+
 
 
   },
@@ -92,12 +92,20 @@ var app = {
       app.elements.$header.style.top = "0";
       app.elements.$header.style.padding = "0";
       document.querySelector('.social-nav').style.display = "none";
+      app.elements.$breadcrumb = document.querySelector('.breadcrumb');
+      if (app.elements.$breadcrumb) {
+        app.elements.$breadcrumb.style.paddingTop = "1.5em";
+      }
       if (app.elements.$main || window.innerHeight > window.innerWidth) {
-        app.elements.$main.style.paddingTop = "6em";
+        app.elements.$main.style.paddingTop = "8em";
       }
     } else {
       // app.elements.$header.style = "";
-      document.querySelector('.social-nav').style = "";
+      document.querySelector('.social-nav').style.display = "block";
+      document.querySelector('.social-nav').style.paddingTop = "1em";
+      if (app.elements.$breadcrumb) {
+        app.elements.$breadcrumb.style = "";
+      }
       if (app.elements.$main) {
         app.elements.$main.style = "";
       }

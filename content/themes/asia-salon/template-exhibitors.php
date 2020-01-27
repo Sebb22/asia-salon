@@ -20,7 +20,7 @@ Template Name: Page exposants
         if ($wp_query->have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post();
                 $logo = get_field('logo');
                 ?>
-                <li class="info__list__item" style="background-image:url('<?php echo 'http://' . $logo['url'] ?>')">
+                <li class="info__list__item" style="background-image:url('<?php echo $logo['url'] ?>')">
                     <a href="<?php echo get_field('link'); ?> " target="_blank">
                     </a>
                     <h2 class="info__list__item__title"> <?php the_title(); ?> </h2>

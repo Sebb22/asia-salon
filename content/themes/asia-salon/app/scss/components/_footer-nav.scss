@@ -10,6 +10,7 @@
       text-align: center;
     }
     &__item {
+      margin-bottom:1em;
       a {
         color: $white;
         transition: 0.5s ease-in-out;

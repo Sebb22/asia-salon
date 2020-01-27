@@ -29,3 +29,9 @@ h3,
 h4 {
   font-family: $font-family-title;
 }
+
+p{
+  @media(max-width:$breakpoint-large){
+    font-size:$font-size-medium;
+  }
+}

@@ -8,13 +8,13 @@
     font-size: 3rem;
     margin-bottom: 0.3em; 
     @media(max-width:$breakpoint-small){
-      font-size: 1rem;
+      font-size:2rem;
     }
   }
 
   &__infos {
     font-weight: 200;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 1em;
   }
 
@@ -32,7 +32,7 @@
 
     &__title{
       @media(max-width:$breakpoint-small){
-        font-size: 1rem;
+        font-size: 2rem;
       }
     }
 
