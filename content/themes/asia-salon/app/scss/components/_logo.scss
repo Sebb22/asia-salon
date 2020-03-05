@@ -21,7 +21,6 @@
     height: 60%;
     margin: 0em auto;
     display: inline;
-
   }
 
   &.is-modal {
@@ -29,9 +28,10 @@
     background-size: contain;
     width: 80%;
     background-position: center;
-    // @media(max-width:$breakpoint-medium){
-      
-    // }
+
+    @media (orientation: landscape) and (max-width: $breakpoint-extra-large){
+      width:60%;
+    }
   }
 
   // @media (orientation: landscape) and (max-height: $breakpoint-large) {

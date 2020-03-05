@@ -18,11 +18,11 @@
   </nav>
   <nav class="footer__social-nav">
     <ul class="footer__social-nav__list ">
-      <li class="footer__social-nav__list__item "><a href="https://fr-fr.facebook.com/camco60/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <li class="footer__social-nav__list__item "><a href="https://fr-fr.facebook.com/camco60/" title="Facebook Camco (nouvelle fenêtre)" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
       </li>
       <!-- <li class="footer__social-nav__list__item "><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
       </li> -->
-      <li class="footer__social-nav__list__item "><a href="https://www.instagram.com/camco_60/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <li class="footer__social-nav__list__item "><a href="https://www.instagram.com/camco_60/" title="Instagram Camco (nouvelle fenêtre)" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
       </li>
     </ul>
   </nav>
@@ -64,7 +64,7 @@
     </nav>
     </div>
 
-    <script src="js/app.js"></script>
+    
     <?php wp_footer(); ?>
     </body>
 

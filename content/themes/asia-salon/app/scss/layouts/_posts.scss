@@ -31,16 +31,24 @@
           transition: opacity 1s, ease-in-out;
           animation-duration: 0.5s;
           animation-name: slidein;
+          transition: slidein, 1s, ease-in-out; 
+
+          &:hover{
+            background: $white;
+            animation-name: slidein2;
+            animation-duration: 0.5s;
+            // transition: 1s background ease-in-out;
+          }
         }
       }
     }
 
     &__content {
       display: none;
-      width: 40%;
-      max-height: 80%;
+      width: 48%;
+      max-height: 90%;
       // background: $white;
-      background: linear-gradient(transparentize($white, 0), transparentize($white, 0.7));
+      background: linear-gradient(transparentize($white, 0), transparentize($white, 0.85));
       filter: opacity(0.8);
       color: $color-text-alt;
       padding: 1em;

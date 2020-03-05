@@ -13,6 +13,14 @@
     font-size: 3rem;
     margin-bottom: 1em;
     width: 100%;
+
+    @media(max-width:$breakpoint-small){
+      font-size:2rem;
+    }
+
+     @media(max-width:$breakpoint-critical){
+       font-size:1rem;
+     }
   }
 
   &__list {
@@ -36,7 +44,7 @@
       background-repeat: no-repeat;
       background-position: center;
       display: block;
-      min-width: calc(100vh / 3);
+      width: calc(100vh / 3);
       min-height: calc(100vh / 3);
       flex: 1 0 auto;
       padding: 1em;
@@ -44,6 +52,21 @@
       transition: 0.5s ease-in-out;
       text-align: center;
       filter: none;
+
+      @media (max-width: $breakpoint-critical) {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        width:0;
+        min-height: calc(100vh / 3);
+        flex: 1 0 auto;
+        padding: 1em;
+        margin: 1em;
+        transition: 0.5s ease-in-out;
+        text-align: center;
+        filter: none;
+      }
 
       a {
         display: block;

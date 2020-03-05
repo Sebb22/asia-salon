@@ -31,7 +31,7 @@ if ($wp_query->have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_
                     <p class="post__content__excerpt">
                         <?php the_excerpt(); ?>
                     </p>
-                    <a href="<?php the_permalink(); ?>" class="post__content__button"><i class="fa fa-plus" aria-hidden="true"></i>Lire la
+                    <a href="<?php the_permalink(); ?>" title="lire la suite de l'article <?php the_title(); ?>" class="post__content__button"><i class="fa fa-plus" aria-hidden="true"></i>Lire la
                         suite</a>
             </article>
         </div>

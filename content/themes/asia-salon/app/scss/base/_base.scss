@@ -50,3 +50,13 @@ a {
     filter: opacity(0.8);
   }
 }
+
+@keyframes slidein2 {
+  from {
+    filter: opacity(1);
+  }
+
+  to {
+    filter: opacity(0.8);
+  }
+}

@@ -43,7 +43,7 @@ endif; ?>
     if ($wp_query->have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
             <div class="news" style="background-image:url('<?php the_post_thumbnail_url(); ?>')">
                 <div class="news__content">
-                    <a href="<?= the_permalink(); ?>" class="news__link">
+                    <a href="<?= the_permalink(); ?>" title="lire l'article <?php the_title(); ?>" class="news__link">
                         <h4 class="news__title"><?php the_title(); ?></h4>
                         <p class="news__about"><?php the_excerpt(); ?></p>
                     </a>

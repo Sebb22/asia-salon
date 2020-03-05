@@ -21,8 +21,18 @@
       color: $white;
       font-weight: bold;
 
-      @media(max-width:$breakpoint-large){
-          display:inline-block;
+      @media (max-width: $breakpoint-large) {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__detail {
+    a {
+      color: $white;
+
+      i {
+        font-size: 0.5em;
       }
     }
   }

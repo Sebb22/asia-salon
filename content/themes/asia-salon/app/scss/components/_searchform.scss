@@ -1,5 +1,9 @@
 .screen-reader-text {
   color: $color-text;
+  
+  @media(max-width:$breakpoint-medium){
+    display:none;
+  }
 }
 
 #searchsubmit{
