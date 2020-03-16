@@ -2,6 +2,7 @@
   width: 100%;
   margin-bottom: 1em;
   line-height: 1.3em;
+  text-align:center;
   &__title {
     color: $red;
     font-weight: bold;
@@ -14,6 +15,7 @@
 
   &__info {
     font-size: 1.2rem;
+    text-align:center;
 
     span {
       background: $red;
