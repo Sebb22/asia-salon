@@ -39,6 +39,7 @@
     "jarallax": "^1.12.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
-    "reset-css": "^4.0.1"
+    "reset-css": "^4.0.1",
+    "serialize-javascript": "^3.0.0"
   }
 }
